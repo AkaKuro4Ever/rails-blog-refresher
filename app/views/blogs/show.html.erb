@@ -1,0 +1,8 @@
+Blog ID: <%=@blog.id%>
+<h2><%=@blog.title%></h2>
+<p><%=@blog.content%></p>
+
+<%= link_to 'Delete Blog Post', blog_path(@blog), method: :delete,
+data: { confirm: 'Are you sure?' } %>
+<br></br>
+<%= link_to 'Edit Blog Post', edit_blog_url(@blog)%>
